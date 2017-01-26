@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <EditText
+        android:id="@+id/telno1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/telno2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:id="@+id/telno3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+    
+    <Spinner
+        android:id="@+id/telco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telno1" 
+        android:entries="@array/telco"/>
+
+    <Button
+        android:id="@+id/close_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telco" 
+        android:layout_alignLeft="@+id/telno1"
+        android:text="Close" />
+
+    <Button
+        android:id="@+id/next_step_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telco" 
+        android:layout_alignRight="@+id/telno3" 
+        android:text="NextPage" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lssc.check.sentencetest"
+    android:versionCode="2"
+    android:versionName="1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name=".LSSCSentenceTestApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="lssc.check.sentencetest.MainActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChooseSentenceCountActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".ChooseSentenceTypeActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".MakeSentenceActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".FinalStatusActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+        <service 
+            android:name=".RecordService" 
+            android:exported="false">
+            <intent-filter>
+               <action android:name="lssc.check.sentencetest.RecordService"/>
+               <category android:name="android.intent.category.DEFAULT"/> 
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

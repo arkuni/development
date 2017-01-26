@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/make_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_next"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/default_sentense_margin"
+        android:layout_marginRight="@dimen/default_sentense_margin"
+        android:textSize="@dimen/default_sentense_textsize"
+        android:lineSpacingExtra="10dp"
+        android:gravity="center"
+        android:text="@string/make_sentence" />
+
+    <include
+        android:id="@+id/record_btn_set"
+        layout="@layout/record_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+	<Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/footer_button_margin"
+        android:layout_marginBottom="@dimen/footer_button_margin"
+        android:paddingLeft="@dimen/footer_button_padding"
+        android:paddingRight="@dimen/footer_button_padding"
+        android:paddingTop="@dimen/default_button_topbottom_padding"
+        android:paddingBottom="@dimen/default_button_topbottom_padding"
+        android:textSize="@dimen/footer_button_textsize"
+        android:text="@string/button_next" />
+
+</RelativeLayout>

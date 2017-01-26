@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="record_btn_on">#9E0000</color>
+    <color name="record_btn_off">#CB2121</color>
+    <color name="intro_btn_on">#9E5D00</color>
+    <color name="intro_btn_off">#CB8521</color>
+    
+    <color name="setting_btn_on">#7A009D</color>
+    <color name="setting_btn_off">#A421CA</color>
+    <color name="history_btn_on">#004EAD</color>
+    <color name="history_btn_off">#4B84C8</color>
+    
+    <color name="stop_btn_on">#310000</color>
+    <color name="stop_btn_off">#941E1E</color>
+    
+    <color name="y_btn_on">#C3EECE</color>
+    <color name="y_btn_off">#FFFFFF</color>
+    <color name="n_btn_on">#C3EECE</color>
+    <color name="n_btn_off">#FFFFFF</color>
+    <color name="pause_btn_on">#DC215C</color>
+    <color name="pause_btn_off">#AA0036</color>
+    <color name="recording_time_view">#E04F16</color>
+</resources>

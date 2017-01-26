@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_index" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <include
+        layout="@layout/topmenu"
+        android:id="@+id/topmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+	<RelativeLayout
+	    android:id="@+id/btn_index_set"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/topmenu"
+    	android:layout_centerHorizontal="true">
+	   
+	    <ImageView
+	        android:id="@+id/btn_index_worldplan"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:contentDescription="@null"
+	        android:src="@drawable/btn_index_worldplan" />
+	    
+	    <ImageView
+	        android:id="@+id/btn_index_domesticplan"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/btn_index_worldplan"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/btn_index_worldplan"
+	        android:contentDescription="@null"
+	        android:src="@drawable/btn_index_domesticplan" />
+	    
+	    <ImageView
+	        android:id="@+id/btn_index_intro"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/btn_index_domesticplan"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/btn_index_domesticplan"
+	        android:contentDescription="@null"
+	        android:src="@drawable/btn_index_intro" />
+	    
+	    <ImageView
+	        android:id="@+id/btn_index_sermon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/btn_index_intro"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/btn_index_intro"
+	        android:contentDescription="@null"
+	        android:src="@drawable/btn_index_sermon" />
+
+	    <ImageView
+	        android:id="@+id/btn_index_seminar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/btn_index_worldplan"
+	        android:layout_alignParentLeft="true"
+	        android:contentDescription="@null"
+	        android:src="@drawable/btn_index_seminar" />
+	    
+	    <ImageView
+	        android:id="@+id/btn_index_guide"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/btn_index_seminar"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/btn_index_seminar"
+	        android:contentDescription="@null"
+	        android:src="@drawable/btn_index_guide" />
+	    
+	    <ImageView
+	        android:id="@+id/btn_index_research_old"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/btn_index_guide"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/btn_index_guide"
+	        android:contentDescription="@null"
+	        android:src="@drawable/btn_index_research_old" />
+	    
+	    <ImageView
+	        android:id="@+id/btn_index_research_new"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/btn_index_research_old"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/btn_index_research_old"
+	        android:contentDescription="@null"
+	        android:src="@drawable/btn_index_research_new" />
+	    
+	</RelativeLayout>
+	
+    <ImageView
+        android:id="@+id/bar_index_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_index_set"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@null"
+        android:src="@drawable/bar_index_app" />
+    
+    <RelativeLayout
+	    android:id="@+id/btn_applink_set"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/bar_index_app"
+    	android:layout_marginTop="15dp"
+    	android:layout_centerHorizontal="true">
+	   
+	    <ImageView
+	        android:id="@+id/btn_app_galilee"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:contentDescription="@null"
+	        android:src="@drawable/icon_app_retreat" />
+	    
+	    <ImageView
+	        android:id="@+id/btn_app_shitim"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/btn_app_galilee"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@+id/btn_app_galilee"
+	        android:contentDescription="@null"
+	        android:src="@drawable/icon_app_shitim" />
+	    
+	    <ImageView
+	        android:id="@+id/btn_app_school"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/btn_app_shitim"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@+id/btn_app_shitim"
+	        android:contentDescription="@null"
+	        android:src="@drawable/icon_app_school" />
+	    
+	    <ImageView
+	        android:id="@+id/btn_app_church"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/btn_app_school"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@+id/btn_app_school"
+	        android:contentDescription="@null"
+	        android:src="@drawable/icon_app_church" />
+
+	    <ImageView
+	        android:id="@+id/btn_app_message"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/btn_app_galilee"
+	        android:layout_marginTop="15dp"
+	        android:layout_alignParentLeft="true"
+	        android:contentDescription="@null"
+	        android:src="@drawable/icon_app_message" />
+	    
+	    <ImageView
+	        android:id="@+id/btn_app_praynote"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/btn_app_message"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@+id/btn_app_message"
+	        android:contentDescription="@null"
+	        android:src="@drawable/icon_app_pray" />
+	    
+	</RelativeLayout>
+
+</RelativeLayout>

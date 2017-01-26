@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LSSCSentenceTest</string>
+	<string name="button_exist_example">점화문장 있는 조건</string>
+	<string name="button_none_example">점화문장 없는 조건</string>
+	<string name="button_record_start">● 녹음시작</string>
+	<string name="button_record_restart">● 녹음재개</string>
+	<string name="button_recording">녹음중..</string>
+	<string name="button_record_pause">∥일시중지</string>
+	<string name="button_record_stop">× 녹음종료</string>
+	<string name="button_next">다음</string>
+	<string name="button_home">처음으로</string>
+	<string name="button_capture">화면캡쳐</string>
+	<string name="button_2sentences">2문장</string>
+	<string name="button_3sentences">3문장</string>
+	<string name="button_4sentences">4문장</string>
+	<string name="hint_name_txt">이름을 입력하세요.</string>
+	<string name="example_title">[ 예 시 ]</string>
+	<string name="status_title">결과</string>
+	<string name="make_sentence">문장을 만들어보세요.</string>
+	<string name="default_example_display_time">5</string>
+
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="default_button_margin">10dp</dimen>
+    <dimen name="default_button_padding">30dp</dimen>
+    <dimen name="default_button_textsize">20sp</dimen>
+    <dimen name="default_sentense_textsize">35sp</dimen>
+    <dimen name="default_sentense_margin">30dp</dimen>
+    <dimen name="default_button_topbottom_padding">7dp</dimen>
+    <dimen name="footer_button_margin">17dp</dimen>
+    <dimen name="footer_button_padding">15dp</dimen>
+    <dimen name="footer_button_textsize">13sp</dimen>
+    <dimen name="remain_time_bottom_margin">3dp</dimen>
+    <dimen name="remain_time_textsize">40sp</dimen>
+    <dimen name="example_title_textsize">25sp</dimen>
+</resources>

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <Button
+        android:id="@+id/button_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/footer_button_margin"
+        android:layout_marginBottom="@dimen/footer_button_margin"
+        android:paddingLeft="@dimen/footer_button_padding"
+        android:paddingRight="@dimen/footer_button_padding"
+        android:paddingTop="@dimen/default_button_topbottom_padding"
+        android:paddingBottom="@dimen/default_button_topbottom_padding"
+        android:text="@string/button_record_start"
+        android:textSize="@dimen/footer_button_textsize" />
+
+    <Button
+        android:id="@+id/button_record_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/footer_button_margin"
+        android:layout_marginBottom="@dimen/footer_button_margin"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/footer_button_padding"
+        android:paddingRight="@dimen/footer_button_padding"
+        android:paddingTop="@dimen/default_button_topbottom_padding"
+        android:paddingBottom="@dimen/default_button_topbottom_padding"
+        android:text="@string/button_record_pause"
+        android:textSize="@dimen/footer_button_textsize" />
+    
+    <Button
+        android:id="@+id/button_record_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/button_record_pause"
+        android:layout_alignTop="@+id/button_record_pause"
+        android:layout_marginLeft="@dimen/footer_button_margin"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/footer_button_padding"
+        android:paddingRight="@dimen/footer_button_padding"
+        android:paddingTop="@dimen/default_button_topbottom_padding"
+        android:paddingBottom="@dimen/default_button_topbottom_padding"
+        android:text="@string/button_record_stop"
+        android:textSize="@dimen/footer_button_textsize" />
+
+</RelativeLayout>

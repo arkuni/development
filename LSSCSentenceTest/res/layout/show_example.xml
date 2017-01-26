@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF6A9">
+    
+    <TextView
+        android:id="@+id/example_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/example_title_textsize"
+        android:layout_marginLeft="@dimen/default_sentense_margin"
+        android:layout_marginRight="@dimen/default_sentense_margin"
+        android:gravity="center"
+        android:text="@string/example_title" />
+
+    <TextView
+        android:id="@+id/example_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/example_title"
+        android:layout_above="@+id/button_next"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:lineSpacingExtra="10dp"
+        android:textSize="@dimen/default_sentense_textsize"
+        android:layout_marginLeft="@dimen/default_sentense_margin"
+        android:layout_marginRight="@dimen/default_sentense_margin"
+        android:gravity="center"
+        android:text="@string/make_sentence" />
+
+    <include
+        layout="@layout/record_btn"
+        android:id="@+id/record_btn_set"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/footer_button_margin"
+        android:layout_marginBottom="@dimen/footer_button_margin"
+        android:paddingLeft="@dimen/footer_button_padding"
+        android:paddingRight="@dimen/footer_button_padding"
+        android:paddingTop="@dimen/default_button_topbottom_padding"
+        android:paddingBottom="@dimen/default_button_topbottom_padding"
+        android:textSize="@dimen/footer_button_textsize"
+        android:text="@string/button_next" />
+
+    <TextView
+        android:id="@+id/remain_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/button_next"
+        android:layout_alignTop="@+id/button_next"
+        android:layout_alignBottom="@+id/button_next"
+        android:layout_marginRight="@dimen/remain_time_bottom_margin"
+        android:gravity="center"
+        android:text="@string/default_example_display_time"
+        android:textSize="@dimen/remain_time_textsize" />
+
+</RelativeLayout>

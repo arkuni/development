@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <EditText
+        android:id="@+id/check_session_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/check_session_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_session_result"
+        android:text="Check Session Start" />
+
+    <ImageView
+        android:id="@+id/captchaImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/check_session_btn"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_launcher" />
+    <Button
+        android:id="@+id/get_captcha_img_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/captchaImg"
+        android:text="Get Captcha Image" />
+
+    <EditText
+        android:id="@+id/captcha_info"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_captcha_img_btn"
+        android:singleLine="true"
+        android:maxLength="8"
+        android:inputType="number"
+        android:ems="10">
+        <requestFocus /> 
+	</EditText>
+
+    <EditText
+        android:id="@+id/user_id"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_captcha_img_btn"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:maxLength="16"
+        android:hint="ID"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/user_pw"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_captcha_img_btn"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="PW"
+        android:inputType="textPassword" />
+    
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_id"
+        android:text="arkuni Login" />
+
+    <Button
+        android:id="@+id/show_cookie_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:text="Go NextPage" />
+    
+    <Button
+        android:id="@+id/nice_custom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_alignParentRight="true"
+        android:text="Go Nice Check" />
+
+</RelativeLayout>

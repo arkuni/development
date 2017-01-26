@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/directory_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="9dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="6dp"
+        android:gravity="center_vertical|left"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textScaleX="@string/default_font_scale"
+        android:textSize="@dimen/list_textsize"/>
+
+    <TextView
+        android:id="@+id/delimeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/directory_name"
+        android:layout_marginLeft="3dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="center_vertical|left"
+        android:textColor="#000000"
+        android:textScaleX="@string/default_font_scale"
+        android:textSize="@dimen/list_textsize"
+        android:text="@string/file_default_delimeter"/>
+
+    <TextView
+        android:id="@+id/filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/delimeter"
+        android:layout_marginLeft="3dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="6dp"
+        android:gravity="center_vertical|left"
+        android:textColor="#000000"
+        android:textScaleX="@string/default_font_scale"
+        android:textSize="@dimen/list_textsize"/>
+
+</RelativeLayout>

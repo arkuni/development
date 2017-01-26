@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_centerInParent="true"/>
+    
+    <Button
+        android:id="@+id/button_none_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/default_button_padding"
+        android:paddingRight="@dimen/default_button_padding"
+        android:paddingTop="@dimen/default_button_topbottom_padding"
+        android:paddingBottom="@dimen/default_button_topbottom_padding"
+        android:text="@string/button_none_example"
+        android:textSize="@dimen/default_button_textsize" />
+
+    <Button
+        android:id="@+id/button_exist_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/default_button_padding"
+        android:paddingRight="@dimen/default_button_padding"
+        android:paddingTop="@dimen/default_button_topbottom_padding"
+        android:paddingBottom="@dimen/default_button_topbottom_padding"
+        android:text="@string/button_exist_example"
+        android:textSize="@dimen/default_button_textsize" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/record_btn" />
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <include
+        layout="@layout/topmenu"
+        android:id="@+id/topmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:id="@+id/domestic_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/topmenu"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/domestic_border" >
+            <TextView
+                android:layout_width="@dimen/domestic_item_title_size"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/domestic_item_left_margin"
+                android:text="@string/domestic_item1"
+                android:textColor="@color/domestic_item_title_color"
+                android:textSize="@dimen/domestic_text_size"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/domestic_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/domestic_value_left_padding"
+                android:text="가평교회"
+                android:textSize="@dimen/domestic_text_size"
+                android:textColor="@color/domestic_item_value_color"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/domestic_border" >
+            <TextView
+                android:layout_width="@dimen/domestic_item_title_size"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/domestic_item_left_margin"
+                android:text="@string/domestic_item2"
+                android:textColor="@color/domestic_item_title_color"
+                android:textSize="@dimen/domestic_text_size"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/domestic_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/domestic_value_left_padding"
+                android:text="가평교회"
+                android:textSize="@dimen/domestic_text_size"
+                android:textColor="@color/domestic_item_value_color"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/domestic_border" >
+            <TextView
+                android:layout_width="@dimen/domestic_item_title_size"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/domestic_item_left_margin"
+                android:text="@string/domestic_item3"
+                android:textColor="@color/domestic_item_title_color"
+                android:textSize="@dimen/domestic_text_size"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/domestic_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/domestic_value_left_padding"
+                android:text="가평교회"
+                android:textSize="@dimen/domestic_text_size"
+                android:textColor="@color/domestic_item_value_color"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/domestic_border" >
+            <TextView
+                android:layout_width="@dimen/domestic_item_title_size"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/domestic_item_left_margin"
+                android:text="@string/domestic_item4"
+                android:textColor="@color/domestic_item_title_color"
+                android:textSize="@dimen/domestic_text_size"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/domestic_item4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/domestic_value_left_padding"
+                android:text="가평교회"
+                android:textSize="@dimen/domestic_text_size"
+                android:textColor="@color/domestic_item_value_color"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/domestic_border" >
+            <TextView
+                android:layout_width="@dimen/domestic_item_title_size"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/domestic_item_left_margin"
+                android:text="@string/domestic_item5"
+                android:textColor="@color/domestic_item_title_color"
+                android:textSize="@dimen/domestic_text_size"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/domestic_item5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/domestic_value_left_padding"
+                android:text="가평교회"
+                android:textSize="@dimen/domestic_text_size"
+                android:textColor="@color/domestic_item_value_color"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/domestic_border" >
+            <TextView
+                android:layout_width="@dimen/domestic_item_title_size"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/domestic_item_left_margin"
+                android:text="@string/domestic_item6"
+                android:textColor="@color/domestic_item_title_color"
+                android:textSize="@dimen/domestic_text_size"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/domestic_item6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/domestic_value_left_padding"
+                android:text="가평교회"
+                android:textSize="@dimen/domestic_text_size"
+                android:textColor="@color/domestic_item_value_color"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

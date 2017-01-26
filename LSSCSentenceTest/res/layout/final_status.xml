@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/final_statistics"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/status_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/status_title"
+        android:textSize="30sp" />
+    
+    <GridView
+        android:id="@+id/statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/status_title"
+        android:layout_above="@+id/button_home"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:numColumns="6" >
+    </GridView>
+    
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/footer_button_margin"
+        android:layout_marginLeft="@dimen/footer_button_margin"
+        android:paddingLeft="@dimen/footer_button_padding"
+        android:paddingRight="@dimen/footer_button_padding"
+        android:paddingTop="@dimen/default_button_topbottom_padding"
+        android:paddingBottom="@dimen/default_button_topbottom_padding"
+        android:textSize="@dimen/footer_button_textsize" 
+        android:text="@string/button_home" />
+
+    <Button
+        android:id="@+id/button_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/footer_button_margin"
+        android:layout_marginRight="@dimen/footer_button_margin"
+        android:paddingLeft="@dimen/footer_button_padding"
+        android:paddingRight="@dimen/footer_button_padding"
+        android:paddingTop="@dimen/default_button_topbottom_padding"
+        android:paddingBottom="@dimen/default_button_topbottom_padding"
+        android:textSize="@dimen/footer_button_textsize" 
+        android:text="@string/button_capture" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

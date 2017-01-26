@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/app_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/dummy"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/intro_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dummy"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/record_btn"
+            android:layout_marginBottom="-65dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="65dp"
+            android:layout_toLeftOf="@+id/dummy"
+            android:background="@drawable/selector_record_btn"
+            android:gravity="center"
+            android:text="@string/intro_btn"
+            android:textScaleX="@string/default_font_scale"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/record_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/dummy"
+            android:layout_alignLeft="@+id/dummy"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="-65dp"
+            android:layout_marginLeft="-65dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/selector_intro_btn"
+            android:text="@string/rec_btn"
+            android:textSize="45sp"
+            android:textScaleX="@string/default_font_scale"
+            android:textStyle="bold" />
+        
+        <RelativeLayout
+            android:id="@+id/recording_btn_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/record_btn"
+            android:layout_alignLeft="@+id/record_btn"
+            android:layout_alignRight="@+id/record_btn"
+            android:layout_alignTop="@+id/record_btn"
+            android:background="#000000"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/dummy_2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/recording_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/dummy_2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/recording_time_view"
+                android:gravity="center"
+                android:textColor="#A9A9A9"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/stop_btn_set"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/dummy_2"
+                android:orientation="horizontal"
+                android:background="#00000000"
+                android:visibility="visible" >
+
+                <Button
+                    android:id="@+id/pause_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_intro_btn"
+                    android:text="@string/pause_btn"
+                    android:textScaleX="@string/default_font_scale"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/stop_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_stop_btn"
+                    android:text="@string/stop_btn"
+                    android:textScaleX="@string/default_font_scale"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/save_btn_set"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/dummy_2"
+                android:background="#00000000"
+                android:orientation="horizontal"
+                android:visibility="invisible" >
+
+                <TextView
+                    android:id="@+id/save_confirm_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="#1E945B"
+                    android:gravity="center"
+                    android:text="@string/save_confirm"
+                    android:textScaleX="@string/default_font_scale"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/save_y_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_y_btn"
+                    android:text="@string/y_btn"
+                    android:textScaleX="@string/default_font_scale"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/save_n_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_n_btn"
+                    android:text="@string/n_btn"
+                    android:textScaleX="@string/default_font_scale"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" /> 
+            
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/setting_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/intro_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/dummy"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="65dp"
+            android:layout_toLeftOf="@+id/dummy"
+            android:background="@drawable/selector_setting_btn"
+            android:gravity="center"
+            android:text="@string/setting_btn"
+            android:textScaleX="@string/default_font_scale"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/history_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dummy"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/record_btn"
+            android:layout_below="@+id/dummy"
+            android:layout_marginLeft="-65dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/selector_history_btn"
+            android:gravity="center"
+            android:text="@string/his_btn"
+            android:textScaleX="@string/default_font_scale"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+        
+        <RelativeLayout
+            android:id="@+id/history_btn_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/history_btn"
+            android:layout_alignRight="@+id/record_btn"
+            android:background="#5EAED3"
+            android:visibility="invisible" >
+
+
+			<ListView
+		        android:id="@android:id/list"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+			    android:cacheColorHint="#00000000"
+		        android:layout_alignParentTop="true"
+		        android:layout_above="@+id/wav_info" />
+			<TextView 
+			    android:id="@+id/wav_info"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignRight="@+id/playProgressBG"
+			    android:layout_above="@+id/playProgress"
+			    android:gravity="center_vertical|right"
+			    android:textScaleX="@string/default_font_scale"
+			    android:textSize="12sp"
+			    android:visibility="invisible"/>
+			<TextView
+			    android:id="@+id/playProgressBG"
+		        android:layout_width="@dimen/play_bg_width"
+		        android:layout_height="10px"
+			    android:layout_above="@+id/history_back_btn"
+			    android:layout_centerHorizontal="true"
+			    android:layout_margin="3dp"
+			    android:background="#AAAAAA"
+			    android:visibility="invisible"/>
+			<TextView
+			    android:id="@+id/playProgress"
+		        android:layout_width="1px"
+		        android:layout_height="10px"
+			    android:layout_alignTop="@+id/playProgressBG"
+			    android:layout_alignLeft="@+id/playProgressBG"
+			    android:background="#FFFFFF"
+			    android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/history_back_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_history_btn"
+                android:gravity="center"
+                android:text="@string/his_btn"
+                android:textScaleX="@string/default_font_scale"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
